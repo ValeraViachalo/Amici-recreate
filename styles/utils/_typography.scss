@@ -1,34 +1,17 @@
 @import "./mixins";
 
 %h1 {
-  font-family: NeueHaasDisplay, sans-serif;
-  font-size: 2.8vw;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 142%;
-  text-transform: uppercase;
-  letter-spacing: normal;
-
-  @include mq() {
-    font-size: 9.4vw;
-  }
-}
-
-.super-text {
-  font-family: NeueHaasDisplay, sans-serif;
-  font-size: 4.7vw;
+  font-family: Fraunces, serif;
+  font-size: VW(148) !important;
   font-style: bold;
   line-height: 90%;
   text-transform: uppercase;
   letter-spacing: normal;
-
-  @include mq() {
-    font-size: 11vw;
-  }
+  font-variation-settings: "wght" 200, "SOFT" 100;
 }
 
 %h2 {
-  font-family: NeueHaasDisplay, sans-serif;
+  font-family: Fraunces, serif;
   font-size: 2vw;
   font-style: bold;
   font-weight: normal;
@@ -41,7 +24,7 @@
 }
 
 %body-text {
-  font-family: NeueHaasDisplay, sans-serif;
+  font-family: Fraunces, serif;
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 400;
@@ -55,7 +38,7 @@
 }
 
 .small-text {
-  font-family: NeueHaasDisplay, sans-serif;
+  font-family: Fraunces, serif;
   font-size: 1vw;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +47,7 @@
 }
 
 .micro-text {
-  font-family: NeueHaasDisplay, sans-serif;
+  font-family: Fraunces, serif;
   font-size: 0.7vw;
   font-style: normal;
   font-weight: bold;

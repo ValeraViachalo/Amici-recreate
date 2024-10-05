@@ -1,0 +1,61 @@
+.slide {
+  &_wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 250vh;
+  }
+
+  &_image {
+    position: absolute;
+    width: 48vw;
+    border: 0.5vw solid $c-white;
+    
+    &:nth-of-type(1) {
+      bottom: 0;
+      left: 25%;
+      z-index: 10;
+      height: VW(900);
+    }
+    
+    &:nth-of-type(2) {
+      bottom: 15%;
+      right: -10%;
+      z-index: 9;
+      rotate: 4deg;
+      height: VW(614);
+    }
+    
+    &:nth-of-type(3) {
+      bottom: 15%;
+      left: -15%;
+      z-index: 9;
+      rotate: -4deg;
+      height: VW(1384);
+    }
+    
+    &:nth-of-type(4) {
+      top: 5%;
+      left: -5%;
+      z-index: 9;
+      rotate: -2deg;
+      height: VW(1154);
+    }
+    
+    &:nth-of-type(5) {
+      top: 10%;
+      left: 28%;
+      z-index: 8;
+      height: VW(1154);
+    }
+    
+    &:nth-of-type(6) {
+      top: 1%;
+      right: -8%;
+      z-index: 7;
+      rotate: 12deg;
+      height: VW(1354);
+    }
+  }
+}

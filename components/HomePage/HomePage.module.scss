@@ -1,12 +1,5 @@
 .home {
-  &_video_bg {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-  }
-
-  &_hero {
+  .hero {
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -14,36 +7,35 @@
     align-items: center;
     justify-content: center;
 
-    &_button {
+    .title {
+      &_line {
+        display: flex;
+        justify-content: center;
+        gap: VW(30);
+      }
+      
+      &_word {
+      }
+
+      &_char {
+        display: inline-block;
+        transform-origin: bottom;
+      }
+    }
+
+    &_decor {
       position: absolute;
-      bottom: 2vw;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
-      color: $c-white;
-    }
-  }
+      width: 100vw;
+      height: auto;
+      color: transparent;
+      
+      &_top {
+        top: 0;
+      }
 
-  &__title {
-    color: $c-white;
-  }
-
-  &_section {
-    width: 100vw;
-    height: 200vh;
-  }
-
-  .scroll {
-    &_wrapper {
-      // width: 100vw;
-      padding: 10vw 20vw;
-    }
-
-    &_content {
-      width: 100%;
-      height: 20vw;
-      overflow: auto;
-      border: 1px solid;
+      &_bottom {
+        bottom: 0;
+      }
     }
   }
 }
